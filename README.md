@@ -2,8 +2,6 @@
 
 **Final Year Major Project**  
 **Student:** Aryan Pal (7th Semester)  
-**Supervisor:** Ms. Richa Gupta  
-**University:** [Your University Name]
 
 ## 📋 Project Overview
 
