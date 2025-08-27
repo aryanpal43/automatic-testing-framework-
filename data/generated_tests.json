@@ -1,0 +1,232 @@
+[
+  {
+    "test_id": "TC_001",
+    "title": "User Login Test",
+    "description": "Test case for login functionality based on requirement: The system shall allow users to login using their email and password....",
+    "priority": "Medium",
+    "steps": [
+      {
+        "step_number": 1,
+        "action": "Navigate to login page",
+        "expected_result": "Successfully navigate to login page",
+        "selector": "url",
+        "input_data": null
+      },
+      {
+        "step_number": 2,
+        "action": "Enter username",
+        "expected_result": "Successfully enter username",
+        "selector": "#username",
+        "input_data": "test_user"
+      },
+      {
+        "step_number": 3,
+        "action": "Enter password",
+        "expected_result": "Successfully enter password",
+        "selector": "#password",
+        "input_data": "test_password"
+      },
+      {
+        "step_number": 4,
+        "action": "Click login button",
+        "expected_result": "Successfully click login button",
+        "selector": "#login-button",
+        "input_data": null
+      },
+      {
+        "step_number": 5,
+        "action": "Verify successful login",
+        "expected_result": "Successfully verify successful login",
+        "selector": ".dashboard",
+        "input_data": null
+      }
+    ],
+    "preconditions": [
+      "Application is accessible",
+      "Test data is available"
+    ],
+    "test_data": {
+      "scenario": "login",
+      "requirement": "The system shall allow users to login using their email and password."
+    }
+  },
+  {
+    "test_id": "TC_002",
+    "title": "User Registration Test",
+    "description": "Test case for register functionality based on requirement: The system shall provide user registration functionality with email verification....",
+    "priority": "Medium",
+    "steps": [
+      {
+        "step_number": 1,
+        "action": "Navigate to registration page",
+        "expected_result": "Successfully navigate to registration page",
+        "selector": "url",
+        "input_data": null
+      },
+      {
+        "step_number": 2,
+        "action": "Enter email",
+        "expected_result": "Successfully enter email",
+        "selector": "#email",
+        "input_data": "test@example.com"
+      },
+      {
+        "step_number": 3,
+        "action": "Enter password",
+        "expected_result": "Successfully enter password",
+        "selector": "#password",
+        "input_data": "TestPass123!"
+      },
+      {
+        "step_number": 4,
+        "action": "Enter confirm password",
+        "expected_result": "Successfully enter confirm password",
+        "selector": "#confirm-password",
+        "input_data": "TestPass123!"
+      },
+      {
+        "step_number": 5,
+        "action": "Click register button",
+        "expected_result": "Successfully click register button",
+        "selector": "#register-button",
+        "input_data": null
+      },
+      {
+        "step_number": 6,
+        "action": "Verify successful registration",
+        "expected_result": "Successfully verify successful registration",
+        "selector": ".success-message",
+        "input_data": null
+      }
+    ],
+    "preconditions": [
+      "Application is accessible",
+      "Test data is available"
+    ],
+    "test_data": {
+      "scenario": "register",
+      "requirement": "The system shall provide user registration functionality with email verification."
+    }
+  },
+  {
+    "test_id": "TC_003",
+    "title": "Search Functionality Test",
+    "description": "Test case for search functionality based on requirement: The system shall allow users to search for products by name or category....",
+    "priority": "Medium",
+    "steps": [
+      {
+        "step_number": 1,
+        "action": "Navigate to search page",
+        "expected_result": "Successfully navigate to search page",
+        "selector": "url",
+        "input_data": null
+      },
+      {
+        "step_number": 2,
+        "action": "Enter search term",
+        "expected_result": "Successfully enter search term",
+        "selector": "#search-input",
+        "input_data": "test search"
+      },
+      {
+        "step_number": 3,
+        "action": "Click search button",
+        "expected_result": "Successfully click search button",
+        "selector": "#search-button",
+        "input_data": null
+      },
+      {
+        "step_number": 4,
+        "action": "Verify search results",
+        "expected_result": "Successfully verify search results",
+        "selector": ".search-results",
+        "input_data": null
+      }
+    ],
+    "preconditions": [
+      "Application is accessible",
+      "Test data is available"
+    ],
+    "test_data": {
+      "scenario": "search",
+      "requirement": "The system shall allow users to search for products by name or category."
+    }
+  },
+  {
+    "test_id": "TC_004",
+    "title": "Generic Test for system",
+    "description": "Automatically generated test case for: The system shall enable users to add items to their shopping cart.",
+    "priority": "Low",
+    "steps": [
+      {
+        "step_number": 1,
+        "action": "Perform enable action",
+        "expected_result": "Action enable completed successfully",
+        "selector": "#enable-element",
+        "input_data": null
+      },
+      {
+        "step_number": 2,
+        "action": "Perform add action",
+        "expected_result": "Action add completed successfully",
+        "selector": "#add-element",
+        "input_data": null
+      }
+    ],
+    "preconditions": [
+      "System is available"
+    ],
+    "test_data": {
+      "requirement": "The system shall enable users to add items to their shopping cart."
+    }
+  },
+  {
+    "test_id": "TC_005",
+    "title": "Generic Test for system",
+    "description": "Automatically generated test case for: The system shall allow users to update their profile information.",
+    "priority": "Low",
+    "steps": [
+      {
+        "step_number": 1,
+        "action": "Perform allow action",
+        "expected_result": "Action allow completed successfully",
+        "selector": "#allow-element",
+        "input_data": null
+      },
+      {
+        "step_number": 2,
+        "action": "Perform update action",
+        "expected_result": "Action update completed successfully",
+        "selector": "#update-element",
+        "input_data": null
+      }
+    ],
+    "preconditions": [
+      "System is available"
+    ],
+    "test_data": {
+      "requirement": "The system shall allow users to update their profile information."
+    }
+  },
+  {
+    "test_id": "TC_006",
+    "title": "Generic Test for system",
+    "description": "Automatically generated test case for: The system shall provide password reset functionality via email.",
+    "priority": "Low",
+    "steps": [
+      {
+        "step_number": 1,
+        "action": "Perform provide action",
+        "expected_result": "Action provide completed successfully",
+        "selector": "#provide-element",
+        "input_data": null
+      }
+    ],
+    "preconditions": [
+      "System is available"
+    ],
+    "test_data": {
+      "requirement": "The system shall provide password reset functionality via email."
+    }
+  }
+]

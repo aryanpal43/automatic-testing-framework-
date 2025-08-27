@@ -1,0 +1,91 @@
+{
+  "total_tests": 2,
+  "passed_tests": 2,
+  "failed_tests": 0,
+  "skipped_tests": 0,
+  "total_execution_time": 15.130653,
+  "start_time": "2025-08-27T18:59:29.513351",
+  "end_time": "2025-08-27T18:59:44.644004",
+  "test_results": [
+    {
+      "test_id": "TC_001",
+      "test_title": "Login Page Test",
+      "status": "PASS",
+      "execution_time": 8.324623,
+      "start_time": "2025-08-27T18:59:29.513351",
+      "end_time": "2025-08-27T18:59:37.837974",
+      "error_message": null,
+      "screenshot_path": "data/screenshots\\TC_001_final_20250827_185937.png",
+      "steps_results": [
+        {
+          "step_number": 1,
+          "action": "Navigate to login page",
+          "status": "PASS",
+          "error_message": null,
+          "execution_time": 3.98543381690979
+        },
+        {
+          "step_number": 2,
+          "action": "Enter username",
+          "status": "PASS",
+          "error_message": null,
+          "execution_time": 0.19835686683654785
+        },
+        {
+          "step_number": 3,
+          "action": "Enter password",
+          "status": "PASS",
+          "error_message": null,
+          "execution_time": 0.21120214462280273
+        },
+        {
+          "step_number": 4,
+          "action": "Click login button",
+          "status": "PASS",
+          "error_message": null,
+          "execution_time": 1.284588098526001
+        },
+        {
+          "step_number": 5,
+          "action": "Verify successful login",
+          "status": "PASS",
+          "error_message": null,
+          "execution_time": 0.022747039794921875
+        }
+      ]
+    },
+    {
+      "test_id": "TC_002",
+      "test_title": "Checkboxes Test",
+      "status": "PASS",
+      "execution_time": 2.523721,
+      "start_time": "2025-08-27T18:59:38.838083",
+      "end_time": "2025-08-27T18:59:41.361804",
+      "error_message": null,
+      "screenshot_path": "data/screenshots\\TC_002_final_20250827_185941.png",
+      "steps_results": [
+        {
+          "step_number": 1,
+          "action": "Navigate to checkboxes page",
+          "status": "PASS",
+          "error_message": null,
+          "execution_time": 0.32403039932250977
+        },
+        {
+          "step_number": 2,
+          "action": "Click first checkbox",
+          "status": "PASS",
+          "error_message": null,
+          "execution_time": 0.594813346862793
+        },
+        {
+          "step_number": 3,
+          "action": "Verify checkbox is checked",
+          "status": "PASS",
+          "error_message": null,
+          "execution_time": 0.007227659225463867
+        }
+      ]
+    }
+  ]
+}

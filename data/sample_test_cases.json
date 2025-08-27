@@ -1,0 +1,89 @@
+[
+  {
+    "test_id": "TC_001",
+    "title": "Login Page Test",
+    "description": "Test the login functionality on the demo site",
+    "priority": "High",
+    "steps": [
+      {
+        "step_number": 1,
+        "action": "Navigate to login page",
+        "expected_result": "Successfully navigate to login page",
+        "selector": "url",
+        "input_data": null
+      },
+      {
+        "step_number": 2,
+        "action": "Enter username",
+        "expected_result": "Successfully enter username",
+        "selector": "#username",
+        "input_data": "tomsmith"
+      },
+      {
+        "step_number": 3,
+        "action": "Enter password",
+        "expected_result": "Successfully enter password",
+        "selector": "#password",
+        "input_data": "SuperSecretPassword!"
+      },
+      {
+        "step_number": 4,
+        "action": "Click login button",
+        "expected_result": "Successfully click login button",
+        "selector": "button[type='submit']",
+        "input_data": null
+      },
+      {
+        "step_number": 5,
+        "action": "Verify successful login",
+        "expected_result": "Successfully verify successful login",
+        "selector": ".flash.success",
+        "input_data": null
+      }
+    ],
+    "preconditions": [
+      "Application is accessible",
+      "Test data is available"
+    ],
+    "test_data": {
+      "scenario": "login",
+      "requirement": "The system shall allow users to login using their email and password."
+    }
+  },
+  {
+    "test_id": "TC_002",
+    "title": "Checkboxes Test",
+    "description": "Test the checkboxes functionality",
+    "priority": "Medium",
+    "steps": [
+      {
+        "step_number": 1,
+        "action": "Navigate to checkboxes page",
+        "expected_result": "Successfully navigate to checkboxes page",
+        "selector": "url",
+        "input_data": null
+      },
+      {
+        "step_number": 2,
+        "action": "Click first checkbox",
+        "expected_result": "Successfully click first checkbox",
+        "selector": "input[type='checkbox']:first-of-type",
+        "input_data": null
+      },
+      {
+        "step_number": 3,
+        "action": "Verify checkbox is checked",
+        "expected_result": "Successfully verify checkbox is checked",
+        "selector": "input[type='checkbox']:first-of-type",
+        "input_data": null
+      }
+    ],
+    "preconditions": [
+      "Application is accessible"
+    ],
+    "test_data": {
+      "scenario": "checkbox",
+      "requirement": "The system shall allow users to interact with checkboxes."
+    }
+  }
+] 

@@ -1,0 +1,14 @@
+numpy
+pandas
+scikit-learn
+xgboost
+matplotlib
+jupyter
+spacy
+transformers
+selenium
+playwright
+pytest
+streamlit
+sqlalchemy
+psycopg2-binary

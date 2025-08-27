@@ -1,0 +1,55 @@
+{
+  "timestamp": "2025-08-27T18:46:28.894652",
+  "summary": {
+    "total_test_cases": 6,
+    "tests_executed": 6,
+    "tests_passed": 3,
+    "tests_failed": 3,
+    "modules_analyzed": 10,
+    "high_risk_modules": 0
+  },
+  "test_cases": [
+    {
+      "id": "TC_001",
+      "title": "User Login Test",
+      "priority": "Medium"
+    },
+    {
+      "id": "TC_002",
+      "title": "User Registration Test",
+      "priority": "Medium"
+    },
+    {
+      "id": "TC_003",
+      "title": "Search Functionality Test",
+      "priority": "Medium"
+    },
+    {
+      "id": "TC_004",
+      "title": "Generic Test for system",
+      "priority": "Low"
+    },
+    {
+      "id": "TC_005",
+      "title": "Generic Test for system",
+      "priority": "Low"
+    },
+    {
+      "id": "TC_006",
+      "title": "Generic Test for system",
+      "priority": "Low"
+    }
+  ],
+  "execution_results": {
+    "total_tests": 6,
+    "passed_tests": 3,
+    "failed_tests": 3,
+    "execution_time": 50.438142
+  },
+  "bug_predictions": {
+    "total_modules": 10,
+    "high_risk": 0,
+    "medium_risk": 0,
+    "low_risk": 10
+  }
+}

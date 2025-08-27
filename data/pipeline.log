@@ -1,0 +1,293 @@
+2025-08-08 12:27:12,407 - __main__ - INFO - Running NLP pipeline only...
+2025-08-08 12:27:12,409 - __main__ - INFO - Starting NLP test generation pipeline...
+2025-08-08 12:27:19,148 - nlp_module.generate_tests - INFO - Starting test case generation...
+2025-08-08 12:27:20,397 - nlp_module.generate_tests - INFO - spaCy model loaded successfully
+2025-08-08 12:27:20,432 - nlp_module.generate_tests - INFO - Generated 6 test cases -> data/generated_tests.json
+2025-08-08 12:27:20,436 - __main__ - INFO - NLP pipeline completed. Generated 6 test cases.
+2025-08-08 12:29:12,609 - __main__ - INFO - Running bug prediction only...
+2025-08-08 12:29:12,609 - __main__ - INFO - Starting bug prediction pipeline...
+2025-08-08 12:29:13,275 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2025-08-08 12:29:18,423 - bug_prediction.train_model - INFO - Starting model training...
+2025-08-08 12:29:18,455 - bug_prediction.train_model - INFO - Loaded data from: data/software_metrics.csv
+2025-08-08 12:29:18,455 - bug_prediction.train_model - INFO - Training RandomForest...
+2025-08-08 12:29:18,819 - bug_prediction.train_model - INFO - RandomForest - Accuracy: 0.900, F1: 0.901, ROC-AUC: 0.972
+2025-08-08 12:29:18,819 - bug_prediction.train_model - INFO - Training XGBoost...
+2025-08-08 12:29:19,020 - bug_prediction.train_model - INFO - XGBoost - Accuracy: 0.890, F1: 0.893, ROC-AUC: 0.970
+2025-08-08 12:29:19,020 - bug_prediction.train_model - INFO - Training GradientBoosting...
+2025-08-08 12:29:19,749 - bug_prediction.train_model - INFO - GradientBoosting - Accuracy: 0.910, F1: 0.912, ROC-AUC: 0.972
+2025-08-08 12:29:19,749 - bug_prediction.train_model - INFO - Training LogisticRegression...
+2025-08-08 12:29:19,774 - bug_prediction.train_model - INFO - LogisticRegression - Accuracy: 0.930, F1: 0.933, ROC-AUC: 0.987
+2025-08-08 12:29:19,774 - bug_prediction.train_model - INFO - Training SVM...
+2025-08-08 12:29:19,874 - bug_prediction.train_model - INFO - SVM - Accuracy: 0.895, F1: 0.899, ROC-AUC: 0.980
+2025-08-08 12:29:19,874 - bug_prediction.train_model - INFO - Training DecisionTree...
+2025-08-08 12:29:19,889 - bug_prediction.train_model - INFO - DecisionTree - Accuracy: 0.870, F1: 0.866, ROC-AUC: 0.870
+2025-08-08 12:29:19,889 - bug_prediction.train_model - INFO - Best model: LogisticRegression
+2025-08-08 12:29:19,925 - bug_prediction.train_model - INFO - Model saved: data/models\randomforest_model.pkl
+2025-08-08 12:29:19,939 - bug_prediction.train_model - INFO - Model saved: data/models\xgboost_model.pkl
+2025-08-08 12:29:19,949 - bug_prediction.train_model - INFO - Model saved: data/models\gradientboosting_model.pkl
+2025-08-08 12:29:19,951 - bug_prediction.train_model - INFO - Model saved: data/models\logisticregression_model.pkl
+2025-08-08 12:29:19,953 - bug_prediction.train_model - INFO - Model saved: data/models\svm_model.pkl
+2025-08-08 12:29:19,957 - bug_prediction.train_model - INFO - Model saved: data/models\decisiontree_model.pkl
+2025-08-08 12:29:19,959 - bug_prediction.train_model - INFO - Scaler saved: data/models\scaler.pkl
+2025-08-08 12:29:19,961 - bug_prediction.train_model - INFO - Metrics saved to: data/model_metrics.json
+2025-08-08 12:29:20,002 - bug_prediction.train_model - INFO - Prediction report saved to: data/bug_predictions.json
+2025-08-08 12:29:20,004 - __main__ - INFO - Bug prediction completed. Generated predictions for 10 modules.
+2025-08-08 12:31:11,484 - __main__ - INFO - Running test execution only...
+2025-08-08 12:31:11,485 - __main__ - INFO - Starting test execution pipeline...
+2025-08-08 12:31:12,143 - test_automation.runner - INFO - Starting test execution from: data/generated_tests.json
+2025-08-08 12:31:13,511 - test_automation.runner - INFO - Chrome WebDriver initialized successfully
+2025-08-08 12:31:13,511 - test_automation.runner - INFO - Starting test execution: TC_001 - User Login Test
+2025-08-08 12:31:17,535 - test_automation.runner - INFO - Navigated to: https://the-internet.herokuapp.com/login
+2025-08-08 12:31:18,245 - test_automation.runner - INFO - Entered 'test_user' in #username
+2025-08-08 12:31:18,889 - test_automation.runner - INFO - Entered 'test_password' in #password
+2025-08-08 12:31:29,415 - test_automation.runner - WARNING - Element not found: #login-button
+2025-08-08 12:31:29,415 - test_automation.runner - ERROR - Step failed: Element not found: #login-button
+2025-08-08 12:31:29,610 - test_automation.runner - INFO - Screenshot saved: data/screenshots\TC_001_step_4_20250808_123129.png
+2025-08-08 12:31:30,611 - test_automation.runner - INFO - Starting test execution: TC_002 - User Registration Test
+2025-08-08 12:31:30,937 - test_automation.runner - INFO - Navigated to: https://the-internet.herokuapp.com/signup
+2025-08-08 12:31:41,469 - test_automation.runner - WARNING - Element not found: #email
+2025-08-08 12:31:41,472 - test_automation.runner - ERROR - Step failed: Element not found: #email
+2025-08-08 12:31:41,639 - test_automation.runner - INFO - Screenshot saved: data/screenshots\TC_002_step_2_20250808_123141.png
+2025-08-08 12:31:42,640 - test_automation.runner - INFO - Starting test execution: TC_003 - Search Functionality Test
+2025-08-08 12:31:43,090 - test_automation.runner - INFO - Navigated to: https://the-internet.herokuapp.com/search
+2025-08-08 12:31:53,663 - test_automation.runner - WARNING - Element not found: #search-input
+2025-08-08 12:31:53,665 - test_automation.runner - ERROR - Step failed: Element not found: #search-input
+2025-08-08 12:31:53,869 - test_automation.runner - INFO - Screenshot saved: data/screenshots\TC_003_step_2_20250808_123153.png
+2025-08-08 12:31:54,871 - test_automation.runner - INFO - Starting test execution: TC_004 - Generic Test for system
+2025-08-08 12:31:54,871 - test_automation.runner - INFO - Executed action: perform enable action
+2025-08-08 12:31:55,373 - test_automation.runner - INFO - Executed action: perform add action
+2025-08-08 12:31:56,037 - test_automation.runner - INFO - Screenshot saved: data/screenshots\TC_004_final_20250808_123155.png
+2025-08-08 12:31:57,059 - test_automation.runner - INFO - Starting test execution: TC_005 - Generic Test for system
+2025-08-08 12:31:57,100 - test_automation.runner - INFO - Executed action: perform allow action
+2025-08-08 12:31:57,674 - test_automation.runner - INFO - Executed action: perform update action
+2025-08-08 12:31:58,607 - test_automation.runner - INFO - Screenshot saved: data/screenshots\TC_005_final_20250808_123158.png
+2025-08-08 12:31:59,610 - test_automation.runner - INFO - Starting test execution: TC_006 - Generic Test for system
+2025-08-08 12:31:59,610 - test_automation.runner - INFO - Executed action: perform provide action
+2025-08-08 12:32:00,280 - test_automation.runner - INFO - Screenshot saved: data/screenshots\TC_006_final_20250808_123200.png
+2025-08-08 12:32:03,596 - test_automation.runner - INFO - WebDriver closed successfully
+2025-08-08 12:32:03,600 - test_automation.runner - INFO - Execution report saved to: data/test_execution_report.json
+2025-08-08 12:32:03,601 - test_automation.runner - INFO - Test execution completed. Passed: 3, Failed: 3, Skipped: 0
+2025-08-08 12:32:03,601 - __main__ - INFO - Test execution completed. Passed: 3, Failed: 3
+2025-08-08 12:35:51,471 - __main__ - INFO - Starting complete testing pipeline...
+2025-08-08 12:35:51,471 - __main__ - INFO - Ensured directory exists: data
+2025-08-08 12:35:51,471 - __main__ - INFO - Ensured directory exists: data/screenshots
+2025-08-08 12:35:51,471 - __main__ - INFO - Ensured directory exists: data/models
+2025-08-08 12:35:51,471 - __main__ - INFO - Ensured directory exists: logs
+2025-08-08 12:35:51,471 - __main__ - INFO - Starting NLP test generation pipeline...
+2025-08-08 12:35:57,285 - nlp_module.generate_tests - INFO - Starting test case generation...
+2025-08-08 12:35:57,914 - nlp_module.generate_tests - INFO - spaCy model loaded successfully
+2025-08-08 12:35:57,948 - nlp_module.generate_tests - INFO - Generated 6 test cases -> data/generated_tests.json
+2025-08-08 12:35:57,952 - __main__ - INFO - NLP pipeline completed. Generated 6 test cases.
+2025-08-08 12:35:57,952 - __main__ - INFO - Starting test execution pipeline...
+2025-08-08 12:35:58,140 - test_automation.runner - INFO - Starting test execution from: data/generated_tests.json
+2025-08-08 12:35:59,476 - test_automation.runner - INFO - Chrome WebDriver initialized successfully
+2025-08-08 12:35:59,477 - test_automation.runner - INFO - Starting test execution: TC_001 - User Login Test
+2025-08-08 12:36:06,291 - test_automation.runner - INFO - Navigated to: https://the-internet.herokuapp.com/login
+2025-08-08 12:36:06,922 - test_automation.runner - INFO - Entered 'test_user' in #username
+2025-08-08 12:36:07,559 - test_automation.runner - INFO - Entered 'test_password' in #password
+2025-08-08 12:36:18,084 - test_automation.runner - WARNING - Element not found: #login-button
+2025-08-08 12:36:18,084 - test_automation.runner - ERROR - Step failed: Element not found: #login-button
+2025-08-08 12:36:18,215 - test_automation.runner - INFO - Screenshot saved: data/screenshots\TC_001_step_4_20250808_123618.png
+2025-08-08 12:36:19,217 - test_automation.runner - INFO - Starting test execution: TC_002 - User Registration Test
+2025-08-08 12:36:19,637 - test_automation.runner - INFO - Navigated to: https://the-internet.herokuapp.com/signup
+2025-08-08 12:36:30,158 - test_automation.runner - WARNING - Element not found: #email
+2025-08-08 12:36:30,158 - test_automation.runner - ERROR - Step failed: Element not found: #email
+2025-08-08 12:36:30,303 - test_automation.runner - INFO - Screenshot saved: data/screenshots\TC_002_step_2_20250808_123630.png
+2025-08-08 12:36:31,304 - test_automation.runner - INFO - Starting test execution: TC_003 - Search Functionality Test
+2025-08-08 12:36:31,717 - test_automation.runner - INFO - Navigated to: https://the-internet.herokuapp.com/search
+2025-08-08 12:36:42,255 - test_automation.runner - WARNING - Element not found: #search-input
+2025-08-08 12:36:42,255 - test_automation.runner - ERROR - Step failed: Element not found: #search-input
+2025-08-08 12:36:42,342 - test_automation.runner - INFO - Screenshot saved: data/screenshots\TC_003_step_2_20250808_123642.png
+2025-08-08 12:36:43,355 - test_automation.runner - INFO - Starting test execution: TC_004 - Generic Test for system
+2025-08-08 12:36:43,355 - test_automation.runner - INFO - Executed action: perform enable action
+2025-08-08 12:36:43,857 - test_automation.runner - INFO - Executed action: perform add action
+2025-08-08 12:36:44,462 - test_automation.runner - INFO - Screenshot saved: data/screenshots\TC_004_final_20250808_123644.png
+2025-08-08 12:36:45,469 - test_automation.runner - INFO - Starting test execution: TC_005 - Generic Test for system
+2025-08-08 12:36:45,469 - test_automation.runner - INFO - Executed action: perform allow action
+2025-08-08 12:36:45,970 - test_automation.runner - INFO - Executed action: perform update action
+2025-08-08 12:36:46,647 - test_automation.runner - INFO - Screenshot saved: data/screenshots\TC_005_final_20250808_123646.png
+2025-08-08 12:36:47,648 - test_automation.runner - INFO - Starting test execution: TC_006 - Generic Test for system
+2025-08-08 12:36:47,648 - test_automation.runner - INFO - Executed action: perform provide action
+2025-08-08 12:36:48,290 - test_automation.runner - INFO - Screenshot saved: data/screenshots\TC_006_final_20250808_123648.png
+2025-08-08 12:36:51,540 - test_automation.runner - INFO - WebDriver closed successfully
+2025-08-08 12:36:51,540 - test_automation.runner - INFO - Execution report saved to: data/test_execution_report.json
+2025-08-08 12:36:51,540 - test_automation.runner - INFO - Test execution completed. Passed: 3, Failed: 3, Skipped: 0
+2025-08-08 12:36:51,540 - __main__ - INFO - Test execution completed. Passed: 3, Failed: 3
+2025-08-08 12:36:51,540 - __main__ - INFO - Starting bug prediction pipeline...
+2025-08-08 12:36:51,999 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2025-08-08 12:36:55,144 - bug_prediction.train_model - INFO - Starting model training...
+2025-08-08 12:36:55,144 - bug_prediction.train_model - INFO - Loaded data from: data/software_metrics.csv
+2025-08-08 12:36:55,167 - bug_prediction.train_model - INFO - Training RandomForest...
+2025-08-08 12:36:55,480 - bug_prediction.train_model - INFO - RandomForest - Accuracy: 0.900, F1: 0.901, ROC-AUC: 0.972
+2025-08-08 12:36:55,480 - bug_prediction.train_model - INFO - Training XGBoost...
+2025-08-08 12:36:55,607 - bug_prediction.train_model - INFO - XGBoost - Accuracy: 0.890, F1: 0.893, ROC-AUC: 0.970
+2025-08-08 12:36:55,607 - bug_prediction.train_model - INFO - Training GradientBoosting...
+2025-08-08 12:36:56,192 - bug_prediction.train_model - INFO - GradientBoosting - Accuracy: 0.910, F1: 0.912, ROC-AUC: 0.972
+2025-08-08 12:36:56,193 - bug_prediction.train_model - INFO - Training LogisticRegression...
+2025-08-08 12:36:56,212 - bug_prediction.train_model - INFO - LogisticRegression - Accuracy: 0.930, F1: 0.933, ROC-AUC: 0.987
+2025-08-08 12:36:56,213 - bug_prediction.train_model - INFO - Training SVM...
+2025-08-08 12:36:56,357 - bug_prediction.train_model - INFO - SVM - Accuracy: 0.895, F1: 0.899, ROC-AUC: 0.980
+2025-08-08 12:36:56,358 - bug_prediction.train_model - INFO - Training DecisionTree...
+2025-08-08 12:36:56,385 - bug_prediction.train_model - INFO - DecisionTree - Accuracy: 0.870, F1: 0.866, ROC-AUC: 0.870
+2025-08-08 12:36:56,385 - bug_prediction.train_model - INFO - Best model: LogisticRegression
+2025-08-08 12:36:56,461 - bug_prediction.train_model - INFO - Model saved: data/models\randomforest_model.pkl
+2025-08-08 12:36:56,472 - bug_prediction.train_model - INFO - Model saved: data/models\xgboost_model.pkl
+2025-08-08 12:36:56,483 - bug_prediction.train_model - INFO - Model saved: data/models\gradientboosting_model.pkl
+2025-08-08 12:36:56,485 - bug_prediction.train_model - INFO - Model saved: data/models\logisticregression_model.pkl
+2025-08-08 12:36:56,489 - bug_prediction.train_model - INFO - Model saved: data/models\svm_model.pkl
+2025-08-08 12:36:56,493 - bug_prediction.train_model - INFO - Model saved: data/models\decisiontree_model.pkl
+2025-08-08 12:36:56,496 - bug_prediction.train_model - INFO - Scaler saved: data/models\scaler.pkl
+2025-08-08 12:36:56,498 - bug_prediction.train_model - INFO - Metrics saved to: data/model_metrics.json
+2025-08-08 12:36:56,524 - bug_prediction.train_model - INFO - Prediction report saved to: data/bug_predictions.json
+2025-08-08 12:36:56,524 - __main__ - INFO - Bug prediction completed. Generated predictions for 10 modules.
+2025-08-08 12:36:56,524 - __main__ - INFO - Generating summary report...
+2025-08-08 12:36:56,526 - __main__ - INFO - Summary report saved to data/pipeline_summary.json
+2025-08-08 12:36:56,528 - __main__ - INFO - Complete pipeline finished in 65.06 seconds
+2025-08-08 12:44:26,253 - __main__ - INFO - Starting complete testing pipeline...
+2025-08-08 12:44:26,253 - __main__ - INFO - Ensured directory exists: data
+2025-08-08 12:44:26,253 - __main__ - INFO - Ensured directory exists: data/screenshots
+2025-08-08 12:44:26,253 - __main__ - INFO - Ensured directory exists: data/models
+2025-08-08 12:44:26,253 - __main__ - INFO - Ensured directory exists: logs
+2025-08-08 12:44:26,253 - __main__ - INFO - Starting NLP test generation pipeline...
+2025-08-08 12:44:30,581 - nlp_module.generate_tests - INFO - Starting test case generation...
+2025-08-08 12:44:31,516 - nlp_module.generate_tests - INFO - spaCy model loaded successfully
+2025-08-08 12:44:31,562 - nlp_module.generate_tests - INFO - Generated 6 test cases -> data/generated_tests.json
+2025-08-08 12:44:31,562 - __main__ - INFO - NLP pipeline completed. Generated 6 test cases.
+2025-08-08 12:44:31,562 - __main__ - INFO - Starting test execution pipeline...
+2025-08-08 12:44:31,954 - test_automation.runner - INFO - Starting test execution from: data/generated_tests.json
+2025-08-08 12:44:33,557 - test_automation.runner - INFO - Chrome WebDriver initialized successfully
+2025-08-08 12:44:33,558 - test_automation.runner - INFO - Starting test execution: TC_001 - User Login Test
+2025-08-08 12:44:35,250 - test_automation.runner - INFO - Navigated to: https://aashultransport.com/login
+2025-08-08 12:44:45,798 - test_automation.runner - WARNING - Element not found: #username
+2025-08-08 12:44:45,798 - test_automation.runner - ERROR - Step failed: Element not found: #username
+2025-08-08 12:44:46,063 - test_automation.runner - INFO - Screenshot saved: data/screenshots\TC_001_step_2_20250808_124445.png
+2025-08-08 12:44:47,079 - test_automation.runner - INFO - Starting test execution: TC_002 - User Registration Test
+2025-08-08 12:44:47,566 - test_automation.runner - INFO - Navigated to: https://aashultransport.com/signup
+2025-08-08 12:44:58,083 - test_automation.runner - WARNING - Element not found: #email
+2025-08-08 12:44:58,083 - test_automation.runner - ERROR - Step failed: Element not found: #email
+2025-08-08 12:44:58,203 - test_automation.runner - INFO - Screenshot saved: data/screenshots\TC_002_step_2_20250808_124458.png
+2025-08-08 12:44:59,216 - test_automation.runner - INFO - Starting test execution: TC_003 - Search Functionality Test
+2025-08-08 12:44:59,377 - test_automation.runner - INFO - Navigated to: https://aashultransport.com/search
+2025-08-08 12:45:20,418 - test_automation.runner - WARNING - Element not found: #search-input
+2025-08-08 12:45:20,419 - test_automation.runner - ERROR - Step failed: Element not found: #search-input
+2025-08-08 12:45:20,589 - test_automation.runner - INFO - Screenshot saved: data/screenshots\TC_003_step_2_20250808_124520.png
+2025-08-08 12:45:21,591 - test_automation.runner - INFO - Starting test execution: TC_004 - Generic Test for system
+2025-08-08 12:45:21,591 - test_automation.runner - INFO - Executed action: perform enable action
+2025-08-08 12:45:22,092 - test_automation.runner - INFO - Executed action: perform add action
+2025-08-08 12:45:22,721 - test_automation.runner - INFO - Screenshot saved: data/screenshots\TC_004_final_20250808_124522.png
+2025-08-08 12:45:23,722 - test_automation.runner - INFO - Starting test execution: TC_005 - Generic Test for system
+2025-08-08 12:45:23,722 - test_automation.runner - INFO - Executed action: perform allow action
+2025-08-08 12:45:24,223 - test_automation.runner - INFO - Executed action: perform update action
+2025-08-08 12:45:24,880 - test_automation.runner - INFO - Screenshot saved: data/screenshots\TC_005_final_20250808_124524.png
+2025-08-08 12:45:25,892 - test_automation.runner - INFO - Starting test execution: TC_006 - Generic Test for system
+2025-08-08 12:45:25,892 - test_automation.runner - INFO - Executed action: perform provide action
+2025-08-08 12:45:26,504 - test_automation.runner - INFO - Screenshot saved: data/screenshots\TC_006_final_20250808_124526.png
+2025-08-08 12:45:29,735 - test_automation.runner - INFO - WebDriver closed successfully
+2025-08-08 12:45:29,735 - test_automation.runner - INFO - Execution report saved to: data/test_execution_report.json
+2025-08-08 12:45:29,735 - test_automation.runner - INFO - Test execution completed. Passed: 3, Failed: 3, Skipped: 0
+2025-08-08 12:45:29,735 - __main__ - INFO - Test execution completed. Passed: 3, Failed: 3
+2025-08-08 12:45:29,735 - __main__ - INFO - Starting bug prediction pipeline...
+2025-08-08 12:45:30,142 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2025-08-08 12:45:33,810 - bug_prediction.train_model - INFO - Starting model training...
+2025-08-08 12:45:33,818 - bug_prediction.train_model - INFO - Loaded data from: data/software_metrics.csv
+2025-08-08 12:45:33,830 - bug_prediction.train_model - INFO - Training RandomForest...
+2025-08-08 12:45:34,173 - bug_prediction.train_model - INFO - RandomForest - Accuracy: 0.900, F1: 0.901, ROC-AUC: 0.972
+2025-08-08 12:45:34,174 - bug_prediction.train_model - INFO - Training XGBoost...
+2025-08-08 12:45:34,340 - bug_prediction.train_model - INFO - XGBoost - Accuracy: 0.890, F1: 0.893, ROC-AUC: 0.970
+2025-08-08 12:45:34,340 - bug_prediction.train_model - INFO - Training GradientBoosting...
+2025-08-08 12:45:35,186 - bug_prediction.train_model - INFO - GradientBoosting - Accuracy: 0.910, F1: 0.912, ROC-AUC: 0.972
+2025-08-08 12:45:35,186 - bug_prediction.train_model - INFO - Training LogisticRegression...
+2025-08-08 12:45:35,219 - bug_prediction.train_model - INFO - LogisticRegression - Accuracy: 0.930, F1: 0.933, ROC-AUC: 0.987
+2025-08-08 12:45:35,219 - bug_prediction.train_model - INFO - Training SVM...
+2025-08-08 12:45:35,351 - bug_prediction.train_model - INFO - SVM - Accuracy: 0.895, F1: 0.899, ROC-AUC: 0.980
+2025-08-08 12:45:35,351 - bug_prediction.train_model - INFO - Training DecisionTree...
+2025-08-08 12:45:35,374 - bug_prediction.train_model - INFO - DecisionTree - Accuracy: 0.870, F1: 0.866, ROC-AUC: 0.870
+2025-08-08 12:45:35,374 - bug_prediction.train_model - INFO - Best model: LogisticRegression
+2025-08-08 12:45:35,436 - bug_prediction.train_model - INFO - Model saved: data/models\randomforest_model.pkl
+2025-08-08 12:45:35,445 - bug_prediction.train_model - INFO - Model saved: data/models\xgboost_model.pkl
+2025-08-08 12:45:35,458 - bug_prediction.train_model - INFO - Model saved: data/models\gradientboosting_model.pkl
+2025-08-08 12:45:35,460 - bug_prediction.train_model - INFO - Model saved: data/models\logisticregression_model.pkl
+2025-08-08 12:45:35,464 - bug_prediction.train_model - INFO - Model saved: data/models\svm_model.pkl
+2025-08-08 12:45:35,466 - bug_prediction.train_model - INFO - Model saved: data/models\decisiontree_model.pkl
+2025-08-08 12:45:35,469 - bug_prediction.train_model - INFO - Scaler saved: data/models\scaler.pkl
+2025-08-08 12:45:35,470 - bug_prediction.train_model - INFO - Metrics saved to: data/model_metrics.json
+2025-08-08 12:45:35,489 - bug_prediction.train_model - INFO - Prediction report saved to: data/bug_predictions.json
+2025-08-08 12:45:35,489 - __main__ - INFO - Bug prediction completed. Generated predictions for 10 modules.
+2025-08-08 12:45:35,490 - __main__ - INFO - Generating summary report...
+2025-08-08 12:45:35,491 - __main__ - INFO - Summary report saved to data/pipeline_summary.json
+2025-08-08 12:45:35,492 - __main__ - INFO - Complete pipeline finished in 69.24 seconds
+2025-08-27 18:45:12,818 - __main__ - INFO - Starting complete testing pipeline...
+2025-08-27 18:45:12,820 - __main__ - INFO - Ensured directory exists: data
+2025-08-27 18:45:12,820 - __main__ - INFO - Ensured directory exists: data/screenshots
+2025-08-27 18:45:12,821 - __main__ - INFO - Ensured directory exists: data/models
+2025-08-27 18:45:12,821 - __main__ - INFO - Ensured directory exists: logs
+2025-08-27 18:45:12,821 - __main__ - INFO - Starting NLP test generation pipeline...
+2025-08-27 18:45:20,201 - nlp_module.generate_tests - INFO - Starting test case generation...
+2025-08-27 18:45:20,917 - nlp_module.generate_tests - INFO - spaCy model loaded successfully
+2025-08-27 18:45:20,963 - nlp_module.generate_tests - INFO - Generated 6 test cases -> data/generated_tests.json
+2025-08-27 18:45:20,965 - __main__ - INFO - NLP pipeline completed. Generated 6 test cases.
+2025-08-27 18:45:20,966 - __main__ - INFO - Starting test execution pipeline...
+2025-08-27 18:45:21,327 - test_automation.runner - INFO - Starting test execution from: data/generated_tests.json
+2025-08-27 18:45:25,261 - test_automation.runner - INFO - Chrome WebDriver initialized successfully
+2025-08-27 18:45:25,263 - test_automation.runner - INFO - Starting test execution: TC_001 - User Login Test
+2025-08-27 18:45:29,621 - test_automation.runner - INFO - Navigated to: https://the-internet.herokuapp.com/login
+2025-08-27 18:45:30,324 - test_automation.runner - INFO - Entered 'test_user' in #username
+2025-08-27 18:45:31,001 - test_automation.runner - INFO - Entered 'test_password' in #password
+2025-08-27 18:45:41,543 - test_automation.runner - WARNING - Element not found: #login-button
+2025-08-27 18:45:41,545 - test_automation.runner - ERROR - Step failed: Element not found: #login-button
+2025-08-27 18:45:41,761 - test_automation.runner - INFO - Screenshot saved: data/screenshots\TC_001_step_4_20250827_184541.png
+2025-08-27 18:45:42,764 - test_automation.runner - INFO - Starting test execution: TC_002 - User Registration Test
+2025-08-27 18:45:43,122 - test_automation.runner - INFO - Navigated to: https://the-internet.herokuapp.com/signup
+2025-08-27 18:45:53,820 - test_automation.runner - WARNING - Element not found: #email
+2025-08-27 18:45:53,821 - test_automation.runner - ERROR - Step failed: Element not found: #email
+2025-08-27 18:45:53,947 - test_automation.runner - INFO - Screenshot saved: data/screenshots\TC_002_step_2_20250827_184553.png
+2025-08-27 18:45:54,949 - test_automation.runner - INFO - Starting test execution: TC_003 - Search Functionality Test
+2025-08-27 18:45:55,268 - test_automation.runner - INFO - Navigated to: https://the-internet.herokuapp.com/search
+2025-08-27 18:46:05,837 - test_automation.runner - WARNING - Element not found: #search-input
+2025-08-27 18:46:05,838 - test_automation.runner - ERROR - Step failed: Element not found: #search-input
+2025-08-27 18:46:05,943 - test_automation.runner - INFO - Screenshot saved: data/screenshots\TC_003_step_2_20250827_184605.png
+2025-08-27 18:46:06,944 - test_automation.runner - INFO - Starting test execution: TC_004 - Generic Test for system
+2025-08-27 18:46:06,944 - test_automation.runner - INFO - Executed action: perform enable action
+2025-08-27 18:46:07,445 - test_automation.runner - INFO - Executed action: perform add action
+2025-08-27 18:46:08,061 - test_automation.runner - INFO - Screenshot saved: data/screenshots\TC_004_final_20250827_184607.png
+2025-08-27 18:46:09,062 - test_automation.runner - INFO - Starting test execution: TC_005 - Generic Test for system
+2025-08-27 18:46:09,062 - test_automation.runner - INFO - Executed action: perform allow action
+2025-08-27 18:46:09,563 - test_automation.runner - INFO - Executed action: perform update action
+2025-08-27 18:46:10,194 - test_automation.runner - INFO - Screenshot saved: data/screenshots\TC_005_final_20250827_184610.png
+2025-08-27 18:46:11,196 - test_automation.runner - INFO - Starting test execution: TC_006 - Generic Test for system
+2025-08-27 18:46:11,200 - test_automation.runner - INFO - Executed action: perform provide action
+2025-08-27 18:46:11,830 - test_automation.runner - INFO - Screenshot saved: data/screenshots\TC_006_final_20250827_184611.png
+2025-08-27 18:46:15,699 - test_automation.runner - INFO - WebDriver closed successfully
+2025-08-27 18:46:15,703 - test_automation.runner - INFO - Execution report saved to: data/test_execution_report.json
+2025-08-27 18:46:15,705 - test_automation.runner - INFO - Test execution completed. Passed: 3, Failed: 3, Skipped: 0
+2025-08-27 18:46:15,705 - __main__ - INFO - Test execution completed. Passed: 3, Failed: 3
+2025-08-27 18:46:15,709 - __main__ - INFO - Starting bug prediction pipeline...
+2025-08-27 18:46:16,939 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2025-08-27 18:46:26,717 - bug_prediction.train_model - INFO - Starting model training...
+2025-08-27 18:46:26,737 - bug_prediction.train_model - INFO - Loaded data from: data/software_metrics.csv
+2025-08-27 18:46:26,825 - bug_prediction.train_model - INFO - Training RandomForest...
+2025-08-27 18:46:27,346 - bug_prediction.train_model - INFO - RandomForest - Accuracy: 0.900, F1: 0.901, ROC-AUC: 0.972
+2025-08-27 18:46:27,347 - bug_prediction.train_model - INFO - Training XGBoost...
+2025-08-27 18:46:27,550 - bug_prediction.train_model - INFO - XGBoost - Accuracy: 0.890, F1: 0.893, ROC-AUC: 0.970
+2025-08-27 18:46:27,551 - bug_prediction.train_model - INFO - Training GradientBoosting...
+2025-08-27 18:46:28,406 - bug_prediction.train_model - INFO - GradientBoosting - Accuracy: 0.910, F1: 0.912, ROC-AUC: 0.972
+2025-08-27 18:46:28,407 - bug_prediction.train_model - INFO - Training LogisticRegression...
+2025-08-27 18:46:28,459 - bug_prediction.train_model - INFO - LogisticRegression - Accuracy: 0.930, F1: 0.933, ROC-AUC: 0.987
+2025-08-27 18:46:28,460 - bug_prediction.train_model - INFO - Training SVM...
+2025-08-27 18:46:28,666 - bug_prediction.train_model - INFO - SVM - Accuracy: 0.895, F1: 0.899, ROC-AUC: 0.980
+2025-08-27 18:46:28,666 - bug_prediction.train_model - INFO - Training DecisionTree...
+2025-08-27 18:46:28,698 - bug_prediction.train_model - INFO - DecisionTree - Accuracy: 0.870, F1: 0.866, ROC-AUC: 0.870
+2025-08-27 18:46:28,701 - bug_prediction.train_model - INFO - Best model: LogisticRegression
+2025-08-27 18:46:28,806 - bug_prediction.train_model - INFO - Model saved: data/models\randomforest_model.pkl
+2025-08-27 18:46:28,819 - bug_prediction.train_model - INFO - Model saved: data/models\xgboost_model.pkl
+2025-08-27 18:46:28,836 - bug_prediction.train_model - INFO - Model saved: data/models\gradientboosting_model.pkl
+2025-08-27 18:46:28,840 - bug_prediction.train_model - INFO - Model saved: data/models\logisticregression_model.pkl
+2025-08-27 18:46:28,845 - bug_prediction.train_model - INFO - Model saved: data/models\svm_model.pkl
+2025-08-27 18:46:28,852 - bug_prediction.train_model - INFO - Model saved: data/models\decisiontree_model.pkl
+2025-08-27 18:46:28,858 - bug_prediction.train_model - INFO - Scaler saved: data/models\scaler.pkl
+2025-08-27 18:46:28,862 - bug_prediction.train_model - INFO - Metrics saved to: data/model_metrics.json
+2025-08-27 18:46:28,893 - bug_prediction.train_model - INFO - Prediction report saved to: data/bug_predictions.json
+2025-08-27 18:46:28,893 - __main__ - INFO - Bug prediction completed. Generated predictions for 10 modules.
+2025-08-27 18:46:28,894 - __main__ - INFO - Generating summary report...
+2025-08-27 18:46:28,896 - __main__ - INFO - Summary report saved to data/pipeline_summary.json
+2025-08-27 18:46:28,896 - __main__ - INFO - Complete pipeline finished in 76.08 seconds
