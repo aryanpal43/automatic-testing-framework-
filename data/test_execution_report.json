@@ -1,89 +1,172 @@
 {
-  "total_tests": 2,
-  "passed_tests": 2,
-  "failed_tests": 0,
+  "total_tests": 6,
+  "passed_tests": 3,
+  "failed_tests": 3,
   "skipped_tests": 0,
-  "total_execution_time": 15.130653,
-  "start_time": "2025-08-27T18:59:29.513351",
-  "end_time": "2025-08-27T18:59:44.644004",
+  "total_execution_time": 52.880788,
+  "start_time": "2025-09-01T12:06:20.934325",
+  "end_time": "2025-09-01T12:07:13.815113",
   "test_results": [
     {
       "test_id": "TC_001",
-      "test_title": "Login Page Test",
-      "status": "PASS",
-      "execution_time": 8.324623,
-      "start_time": "2025-08-27T18:59:29.513351",
-      "end_time": "2025-08-27T18:59:37.837974",
-      "error_message": null,
-      "screenshot_path": "data/screenshots\\TC_001_final_20250827_185937.png",
+      "test_title": "User Login Test",
+      "status": "FAIL",
+      "execution_time": 18.304318,
+      "start_time": "2025-09-01T12:06:20.934325",
+      "end_time": "2025-09-01T12:06:39.238643",
+      "error_message": "Element not found: #login-button",
+      "screenshot_path": "data/screenshots\\TC_001_step_4_20250901_120639.png",
       "steps_results": [
         {
           "step_number": 1,
           "action": "Navigate to login page",
           "status": "PASS",
           "error_message": null,
-          "execution_time": 3.98543381690979
+          "execution_time": 6.3387651443481445
         },
         {
           "step_number": 2,
           "action": "Enter username",
           "status": "PASS",
           "error_message": null,
-          "execution_time": 0.19835686683654785
+          "execution_time": 0.16088557243347168
         },
         {
           "step_number": 3,
           "action": "Enter password",
           "status": "PASS",
           "error_message": null,
-          "execution_time": 0.21120214462280273
+          "execution_time": 0.13721919059753418
         },
         {
           "step_number": 4,
           "action": "Click login button",
-          "status": "PASS",
-          "error_message": null,
-          "execution_time": 1.284588098526001
-        },
-        {
-          "step_number": 5,
-          "action": "Verify successful login",
-          "status": "PASS",
-          "error_message": null,
-          "execution_time": 0.022747039794921875
+          "status": "FAIL",
+          "error_message": "Element not found: #login-button",
+          "execution_time": 10.049161672592163
         }
       ]
     },
     {
       "test_id": "TC_002",
-      "test_title": "Checkboxes Test",
-      "status": "PASS",
-      "execution_time": 2.523721,
-      "start_time": "2025-08-27T18:59:38.838083",
-      "end_time": "2025-08-27T18:59:41.361804",
-      "error_message": null,
-      "screenshot_path": "data/screenshots\\TC_002_final_20250827_185941.png",
+      "test_title": "User Registration Test",
+      "status": "FAIL",
+      "execution_time": 11.13223,
+      "start_time": "2025-09-01T12:06:40.238889",
+      "end_time": "2025-09-01T12:06:51.371119",
+      "error_message": "Element not found: #email",
+      "screenshot_path": "data/screenshots\\TC_002_step_2_20250901_120651.png",
       "steps_results": [
         {
           "step_number": 1,
-          "action": "Navigate to checkboxes page",
+          "action": "Navigate to registration page",
           "status": "PASS",
           "error_message": null,
-          "execution_time": 0.32403039932250977
+          "execution_time": 0.37909364700317383
         },
         {
           "step_number": 2,
-          "action": "Click first checkbox",
+          "action": "Enter email",
+          "status": "FAIL",
+          "error_message": "Element not found: #email",
+          "execution_time": 10.050105810165405
+        }
+      ]
+    },
+    {
+      "test_id": "TC_003",
+      "test_title": "Search Functionality Test",
+      "status": "FAIL",
+      "execution_time": 11.069002,
+      "start_time": "2025-09-01T12:06:52.372073",
+      "end_time": "2025-09-01T12:07:03.441075",
+      "error_message": "Element not found: #search-input",
+      "screenshot_path": "data/screenshots\\TC_003_step_2_20250901_120703.png",
+      "steps_results": [
+        {
+          "step_number": 1,
+          "action": "Navigate to search page",
           "status": "PASS",
           "error_message": null,
-          "execution_time": 0.594813346862793
+          "execution_time": 0.40097594261169434
         },
         {
-          "step_number": 3,
-          "action": "Verify checkbox is checked",
+          "step_number": 2,
+          "action": "Enter search term",
+          "status": "FAIL",
+          "error_message": "Element not found: #search-input",
+          "execution_time": 10.046561002731323
+        }
+      ]
+    },
+    {
+      "test_id": "TC_004",
+      "test_title": "Generic Test for system",
+      "status": "PASS",
+      "execution_time": 2.387575,
+      "start_time": "2025-09-01T12:07:04.441372",
+      "end_time": "2025-09-01T12:07:06.828947",
+      "error_message": null,
+      "screenshot_path": "data/screenshots\\TC_004_final_20250901_120705.png",
+      "steps_results": [
+        {
+          "step_number": 1,
+          "action": "Perform enable action",
           "status": "PASS",
           "error_message": null,
-          "execution_time": 0.007227659225463867
+          "execution_time": 0.0006878376007080078
+        },
+        {
+          "step_number": 2,
+          "action": "Perform add action",
+          "status": "PASS",
+          "error_message": null,
+          "execution_time": 0.0
+        }
+      ]
+    },
+    {
+      "test_id": "TC_005",
+      "test_title": "Generic Test for system",
+      "status": "PASS",
+      "execution_time": 1.083667,
+      "start_time": "2025-09-01T12:07:07.831032",
+      "end_time": "2025-09-01T12:07:08.914699",
+      "error_message": null,
+      "screenshot_path": "data/screenshots\\TC_005_final_20250901_120708.png",
+      "steps_results": [
+        {
+          "step_number": 1,
+          "action": "Perform allow action",
+          "status": "PASS",
+          "error_message": null,
+          "execution_time": 0.0
+        },
+        {
+          "step_number": 2,
+          "action": "Perform update action",
+          "status": "PASS",
+          "error_message": null,
+          "execution_time": 0.0007731914520263672
+        }
+      ]
+    },
+    {
+      "test_id": "TC_006",
+      "test_title": "Generic Test for system",
+      "status": "PASS",
+      "execution_time": 0.628828,
+      "start_time": "2025-09-01T12:07:09.916034",
+      "end_time": "2025-09-01T12:07:10.544862",
+      "error_message": null,
+      "screenshot_path": "data/screenshots\\TC_006_final_20250901_120710.png",
+      "steps_results": [
+        {
+          "step_number": 1,
+          "action": "Perform provide action",
+          "status": "PASS",
+          "error_message": null,
+          "execution_time": 0.0
         }
       ]
     }

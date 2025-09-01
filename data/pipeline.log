@@ -291,3 +291,115 @@
 2025-08-27 18:46:28,894 - __main__ - INFO - Generating summary report...
 2025-08-27 18:46:28,896 - __main__ - INFO - Summary report saved to data/pipeline_summary.json
 2025-08-27 18:46:28,896 - __main__ - INFO - Complete pipeline finished in 76.08 seconds
+2025-08-27 19:14:11,333 - __main__ - INFO - Starting complete testing pipeline...
+2025-08-27 19:14:11,334 - __main__ - INFO - Ensured directory exists: data
+2025-08-27 19:14:11,335 - __main__ - INFO - Ensured directory exists: data/screenshots
+2025-08-27 19:14:11,335 - __main__ - INFO - Ensured directory exists: data/models
+2025-08-27 19:14:11,428 - __main__ - INFO - Ensured directory exists: logs
+2025-08-27 19:14:11,428 - __main__ - INFO - Starting NLP test generation pipeline...
+2025-08-27 19:14:26,263 - nlp_module.generate_tests - INFO - Starting test case generation...
+2025-08-27 19:14:26,266 - nlp_module.generate_tests - WARNING - spaCy model not found. Installing...
+2025-08-27 19:14:47,472 - nlp_module.generate_tests - INFO - Generated 6 test cases -> data/generated_tests.json
+2025-08-27 19:14:47,476 - __main__ - INFO - NLP pipeline completed. Generated 6 test cases.
+2025-08-27 19:14:47,476 - __main__ - INFO - Starting test execution pipeline...
+2025-08-27 19:14:47,577 - __main__ - ERROR - Error in test execution pipeline: No module named 'selenium'
+2025-08-27 19:14:47,577 - __main__ - ERROR - Pipeline failed: No module named 'selenium'
+2025-08-27 19:14:47,577 - __main__ - ERROR - Pipeline failed: No module named 'selenium'
+2025-08-27 19:18:10,052 - __main__ - INFO - Starting complete testing pipeline...
+2025-08-27 19:18:10,053 - __main__ - INFO - Ensured directory exists: data
+2025-08-27 19:18:10,053 - __main__ - INFO - Ensured directory exists: data/screenshots
+2025-08-27 19:18:10,054 - __main__ - INFO - Ensured directory exists: data/models
+2025-08-27 19:18:10,055 - __main__ - INFO - Ensured directory exists: logs
+2025-08-27 19:18:10,055 - __main__ - INFO - Starting NLP test generation pipeline...
+2025-08-27 19:18:14,872 - nlp_module.generate_tests - INFO - Starting test case generation...
+2025-08-27 19:18:15,636 - nlp_module.generate_tests - INFO - spaCy model loaded successfully
+2025-08-27 19:18:15,666 - nlp_module.generate_tests - INFO - Generated 6 test cases -> data/generated_tests.json
+2025-08-27 19:18:15,666 - __main__ - INFO - NLP pipeline completed. Generated 6 test cases.
+2025-08-27 19:18:15,666 - __main__ - INFO - Starting test execution pipeline...
+2025-08-27 19:18:15,917 - test_automation.runner - INFO - Starting test execution from: data/generated_tests.json
+2025-08-27 19:18:21,069 - test_automation.runner - INFO - Chrome WebDriver initialized successfully
+2025-08-27 19:18:21,069 - test_automation.runner - INFO - Starting test execution: TC_001 - User Login Test
+2025-08-27 19:18:26,118 - test_automation.runner - INFO - Navigated to: https://the-internet.herokuapp.com/login
+2025-08-27 19:18:26,771 - test_automation.runner - INFO - Entered 'test_user' in #username
+2025-08-27 19:18:27,525 - test_automation.runner - INFO - Entered 'test_password' in #password
+2025-08-27 19:18:38,107 - test_automation.runner - WARNING - Element not found: #login-button
+2025-08-27 19:18:38,108 - test_automation.runner - ERROR - Step failed: Element not found: #login-button
+2025-08-27 19:18:38,251 - test_automation.runner - INFO - Screenshot saved: data/screenshots\TC_001_step_4_20250827_191838.png
+2025-08-27 19:18:39,252 - test_automation.runner - INFO - Starting test execution: TC_002 - User Registration Test
+2025-08-27 19:18:39,651 - test_automation.runner - INFO - Navigated to: https://the-internet.herokuapp.com/signup
+2025-08-27 19:18:50,175 - test_automation.runner - WARNING - Element not found: #email
+2025-08-27 19:18:50,176 - test_automation.runner - ERROR - Step failed: Element not found: #email
+2025-08-27 19:18:50,312 - test_automation.runner - INFO - Screenshot saved: data/screenshots\TC_002_step_2_20250827_191850.png
+2025-08-27 19:18:51,314 - test_automation.runner - INFO - Starting test execution: TC_003 - Search Functionality Test
+2025-08-27 19:18:51,734 - test_automation.runner - INFO - Navigated to: https://the-internet.herokuapp.com/search
+2025-08-27 19:19:12,810 - test_automation.runner - WARNING - Element not found: #search-input
+2025-08-27 19:19:12,810 - test_automation.runner - ERROR - Step failed: Element not found: #search-input
+2025-08-27 19:19:12,940 - test_automation.runner - INFO - Screenshot saved: data/screenshots\TC_003_step_2_20250827_191912.png
+2025-08-27 19:19:13,948 - test_automation.runner - INFO - Starting test execution: TC_004 - Generic Test for system
+2025-08-27 19:19:13,948 - test_automation.runner - INFO - Executed action: perform enable action
+2025-08-27 19:19:14,452 - test_automation.runner - INFO - Executed action: perform add action
+2025-08-27 19:19:15,128 - test_automation.runner - INFO - Screenshot saved: data/screenshots\TC_004_final_20250827_191914.png
+2025-08-27 19:19:16,135 - test_automation.runner - INFO - Starting test execution: TC_005 - Generic Test for system
+2025-08-27 19:19:16,136 - test_automation.runner - INFO - Executed action: perform allow action
+2025-08-27 19:19:16,637 - test_automation.runner - INFO - Executed action: perform update action
+2025-08-27 19:19:17,274 - test_automation.runner - INFO - Screenshot saved: data/screenshots\TC_005_final_20250827_191917.png
+2025-08-27 19:19:18,282 - test_automation.runner - INFO - Starting test execution: TC_006 - Generic Test for system
+2025-08-27 19:19:18,284 - test_automation.runner - INFO - Executed action: perform provide action
+2025-08-27 19:19:18,921 - test_automation.runner - INFO - Screenshot saved: data/screenshots\TC_006_final_20250827_191918.png
+2025-08-27 19:19:22,103 - test_automation.runner - INFO - WebDriver closed successfully
+2025-08-27 19:19:22,123 - test_automation.runner - INFO - Execution report saved to: data/test_execution_report.json
+2025-08-27 19:19:22,127 - test_automation.runner - INFO - Test execution completed. Passed: 3, Failed: 3, Skipped: 0
+2025-08-27 19:19:22,130 - __main__ - INFO - Test execution completed. Passed: 3, Failed: 3
+2025-08-27 19:19:22,131 - __main__ - INFO - Starting bug prediction pipeline...
+2025-08-27 19:19:34,185 - __main__ - ERROR - Error in bug prediction pipeline: No module named 'xgboost'
+2025-08-27 19:19:34,185 - __main__ - ERROR - Pipeline failed: No module named 'xgboost'
+2025-08-27 19:19:34,185 - __main__ - ERROR - Pipeline failed: No module named 'xgboost'
+2025-09-01 11:59:48,775 - __main__ - INFO - Starting complete testing pipeline...
+2025-09-01 11:59:48,775 - __main__ - INFO - Ensured directory exists: data
+2025-09-01 11:59:48,776 - __main__ - INFO - Ensured directory exists: data/screenshots
+2025-09-01 11:59:48,776 - __main__ - INFO - Ensured directory exists: data/models
+2025-09-01 11:59:48,777 - __main__ - INFO - Ensured directory exists: logs
+2025-09-01 11:59:48,777 - __main__ - INFO - Starting NLP test generation pipeline...
+2025-09-01 12:00:04,959 - nlp_module.generate_tests - INFO - Starting test case generation...
+2025-09-01 12:00:06,157 - nlp_module.generate_tests - INFO - spaCy model loaded successfully
+2025-09-01 12:00:06,232 - nlp_module.generate_tests - INFO - Generated 6 test cases -> data/generated_tests.json
+2025-09-01 12:00:06,236 - __main__ - INFO - NLP pipeline completed. Generated 6 test cases.
+2025-09-01 12:00:06,236 - __main__ - INFO - Starting test execution pipeline...
+2025-09-01 12:00:06,628 - test_automation.runner - INFO - Starting test execution from: data/generated_tests.json
+2025-09-01 12:00:10,391 - test_automation.runner - INFO - Chrome WebDriver initialized successfully
+2025-09-01 12:00:10,392 - test_automation.runner - INFO - Starting test execution: TC_001 - User Login Test
+2025-09-01 12:00:30,722 - test_automation.runner - INFO - Navigated to: https://the-internet.herokuapp.com/login
+2025-09-01 12:00:31,351 - test_automation.runner - INFO - Entered 'test_user' in #username
+2025-09-01 12:00:31,961 - test_automation.runner - INFO - Entered 'test_password' in #password
+2025-09-01 12:00:42,507 - test_automation.runner - WARNING - Element not found: #login-button
+2025-09-01 12:00:42,507 - test_automation.runner - ERROR - Step failed: Element not found: #login-button
+2025-09-01 12:00:42,640 - test_automation.runner - INFO - Screenshot saved: data/screenshots\TC_001_step_4_20250901_120042.png
+2025-09-01 12:00:43,641 - test_automation.runner - INFO - Starting test execution: TC_002 - User Registration Test
+2025-09-01 12:00:44,031 - test_automation.runner - INFO - Navigated to: https://the-internet.herokuapp.com/signup
+2025-09-01 12:00:54,578 - test_automation.runner - WARNING - Element not found: #email
+2025-09-01 12:00:54,578 - test_automation.runner - ERROR - Step failed: Element not found: #email
+2025-09-01 12:00:54,693 - test_automation.runner - INFO - Screenshot saved: data/screenshots\TC_002_step_2_20250901_120054.png
+2025-09-01 12:00:55,695 - test_automation.runner - INFO - Starting test execution: TC_003 - Search Functionality Test
+2025-09-01 12:00:56,123 - test_automation.runner - INFO - Navigated to: https://the-internet.herokuapp.com/search
+2025-09-01 12:01:06,661 - test_automation.runner - WARNING - Element not found: #search-input
+2025-09-01 12:01:06,661 - test_automation.runner - ERROR - Step failed: Element not found: #search-input
+2025-09-01 12:01:06,774 - test_automation.runner - INFO - Screenshot saved: data/screenshots\TC_003_step_2_20250901_120106.png
+2025-09-01 12:01:07,775 - test_automation.runner - INFO - Starting test execution: TC_004 - Generic Test for system
+2025-09-01 12:01:07,775 - test_automation.runner - INFO - Executed action: perform enable action
+2025-09-01 12:01:08,278 - test_automation.runner - INFO - Executed action: perform add action
+2025-09-01 12:01:08,952 - test_automation.runner - INFO - Screenshot saved: data/screenshots\TC_004_final_20250901_120108.png
+2025-09-01 12:01:09,956 - test_automation.runner - INFO - Starting test execution: TC_005 - Generic Test for system
+2025-09-01 12:01:09,956 - test_automation.runner - INFO - Executed action: perform allow action
+2025-09-01 12:01:10,457 - test_automation.runner - INFO - Executed action: perform update action
+2025-09-01 12:01:11,115 - test_automation.runner - INFO - Screenshot saved: data/screenshots\TC_005_final_20250901_120110.png
+2025-09-01 12:01:12,116 - test_automation.runner - INFO - Starting test execution: TC_006 - Generic Test for system
+2025-09-01 12:01:12,116 - test_automation.runner - INFO - Executed action: perform provide action
+2025-09-01 12:01:13,274 - test_automation.runner - INFO - Screenshot saved: data/screenshots\TC_006_final_20250901_120112.png
+2025-09-01 12:01:16,436 - test_automation.runner - INFO - WebDriver closed successfully
+2025-09-01 12:01:16,441 - test_automation.runner - INFO - Execution report saved to: data/test_execution_report.json
+2025-09-01 12:01:16,443 - test_automation.runner - INFO - Test execution completed. Passed: 3, Failed: 3, Skipped: 0
+2025-09-01 12:01:16,445 - __main__ - INFO - Test execution completed. Passed: 3, Failed: 3
+2025-09-01 12:01:16,445 - __main__ - INFO - Starting bug prediction pipeline...
+2025-09-01 12:01:41,149 - __main__ - ERROR - Error in bug prediction pipeline: No module named 'xgboost'
+2025-09-01 12:01:41,149 - __main__ - ERROR - Pipeline failed: No module named 'xgboost'
+2025-09-01 12:01:41,150 - __main__ - ERROR - Pipeline failed: No module named 'xgboost'

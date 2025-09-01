@@ -406,18 +406,18 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Project Type**: Final Year Major Project  
 **Duration**: 6 months  
-**Supervisor**: Ms. Richa Gupta  
-**Student**: Aryan Pal  
+**Supervisor**: Mr. Deepak Upadhyay  
+**Team Members**: Aryan Pal, Harshit Bhatt, Archit Agarwal, Sachin Dangwal  
 **Semester**: 7th Semester  
-**University**: [Your University Name]  
-**Department**: Computer Science/Information Technology  
+**University**: Graphic Era Hill University 
+**Department**: Computer Science and Engineering
 
 ## 📞 Contact
 
 - **Student**: Aryan Pal
 - **Email**: [your.email@university.edu]
-- **Supervisor**: Ms. Richa Gupta
-- **Email**: [supervisor.email@university.edu]
+- **Supervisor**: Mr. Deepak Upadhyay
+
 
 ## 🙏 Acknowledgments
 
